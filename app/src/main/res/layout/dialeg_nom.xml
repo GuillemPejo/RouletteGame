@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Introdueix el teu nom, siusplau:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nom_persona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/okey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nom_persona"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="D'acord"
+        android:textAlignment="center" />
+</RelativeLayout>

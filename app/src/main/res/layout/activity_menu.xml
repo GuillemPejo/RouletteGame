@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_ruleta"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/titol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/titol" />
+
+        <ImageView
+            android:id="@+id/ruleta"
+            android:layout_width="407dp"
+            android:layout_height="557dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.723"
+            app:srcCompat="@drawable/ruleta" />
+
+        <Button
+            android:id="@+id/jugar"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/jugar_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titol" />
+
+        <Button
+            android:id="@+id/ranking"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ranking_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jugar" />
+
+        <Button
+            android:id="@+id/ajuda"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ajuda_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ranking" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
